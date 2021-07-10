@@ -1,10 +1,15 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from '../src/components/Navbar/Navbar'
 import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
-      <h2>React Responsive Website</h2>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" />
+      </Switch>
+    </Router>
   )
 }
 
